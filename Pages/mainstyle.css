@@ -1,0 +1,729 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/**Navigation Bar***/
+.navbar{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-bottom: 2px solid gray;
+}
+.navbar-brand img{
+    width: 25%;
+}
+.navbar-brand h1{
+    display: none;
+}
+.social{
+    margin-top: 2%;
+}
+.icons{
+    list-style: none;
+    display: inline-flex;
+}
+.icons-item{
+    margin: auto 10%;
+}
+.icon-link{
+    color: black;
+}
+.icon-link:hover{
+    color: red;
+}
+.social .fa-brands{
+    font-size: 22px;
+}
+@media screen and (max-width: 600px) {
+    .navbar-brand img{
+        display: none;
+    }
+    .navbar-brand h1{
+        display: flex;
+        font-family: fantasy;
+        letter-spacing: 3px;
+        border: 1px solid red;
+        padding: 10px;
+    }
+    .social{
+        margin-left: 25%;
+    }
+    
+}
+
+
+/**Title Section***/
+.title{
+    background-color: whitesmoke;
+    margin-top: 2%;
+}
+.title-content{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.title-content h1{
+    color: black;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-left: 10%;
+}
+.title-content h1 span{
+    border-top: 3px solid red;
+    padding-top: 10px;
+}
+.title-content h5{
+    color: red;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 10%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.title-content a{
+    text-decoration: none;
+    border: 1px solid black;
+    background-color: red;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 10%;
+}
+.title-content a:hover{
+    background-color: transparent;
+    color: black;
+    border: 1px solid red;
+    transition: background ease 0.5s;
+}
+
+.title-image img{
+    width: 100%;
+    margin-top: 3%;
+    margin-bottom: 20%;
+    border-radius: 20px;
+    box-shadow: 0 0 3px black;
+}
+@media screen and (width: 768px) {
+    .title-image img{
+        width: 90%;
+        margin-top: 20%;
+    }
+    
+}
+@media screen and (max-width: 600px) {
+    .title-content h1{
+        margin-left: 0;
+    }
+    .title-content h5{
+        margin-left: 0;
+        margin-top: 4%;
+    }
+    .title-content a{
+        margin-left: 0;
+    }
+    .title-image img{
+        width: 100%;
+    }
+
+    
+}
+
+
+
+/**Featured Products Section***/
+.product{
+    margin-top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: white;
+    color: white;
+}
+.product h1{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-top: 1%;
+    color: black;
+    margin-bottom: 3%;
+}
+.product h1 span{
+    border-bottom: 4px solid red;
+    padding-bottom: 10px;
+}
+.product-details{
+    margin-left: 2%;
+}
+.product-details-1{
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/Drip\ Sneakers.png);
+    background-position: center;
+    background-size: cover;
+    margin: 5% 1% 5% 8%;
+    background-color: black;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+.product-details-1:hover{
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in;
+}
+.product-details-2{
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/Gym\ Shoes.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 5% 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+.product-details-2:hover{
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in;
+}
+.product-details-3{
+    height: 400px;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../images/white\ nike.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 5% 1%;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px black;
+}
+.product-details-3:hover{
+    opacity: 0.8;
+    transition: opacity 0.5s ease-in;
+}
+.product-details h3{
+    text-align: center;
+    margin-top: 50%;
+    color: white;
+    font-family: fantasy;
+    letter-spacing: 3px;
+}
+.product-details h3 span{
+    border-bottom: 3px solid red;
+    padding-bottom: 4%;
+}
+.product-details h5{
+    margin-top: 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.product-details p{
+    text-align: center;
+    font-size: 30px;
+    opacity: 0;
+}
+.product:hover .product-details p{
+    opacity: 1;
+}
+
+@media screen and (max-width: 600px) {
+    .product-details-1, .product-details-2, .product-details-3{
+        margin: 2%  0%;
+    }
+    
+}
+
+/**Other Products Section**/
+.other-products{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: white;
+}
+.other-products h1{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-top: 1%;
+    color: black;
+    margin-bottom: 5%;
+}
+.other-products h1 span{
+    border-bottom: 4px solid red;
+    padding-bottom: 10px;
+}
+.latest img{
+    width: 90%;
+    margin: 1% 0; 
+}
+.product-message p{
+    position: absolute;
+    opacity: 0;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    background-color: rgba(83, 7, 7, 0.726);
+    padding: 10px 20px;
+    text-align: center;
+    transition: 0.5s ease-in;
+    margin-top: -20%;
+    margin-left: 30%;
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+}
+.latest:hover .product-message p{
+    opacity: 1;
+}
+@media screen and (max-width: 600px){
+    .other-products h1{
+        margin-bottom: 10%;
+    }
+    .product-message p{
+        margin-top: -50%;
+        margin-left: 40%;
+    }
+}
+
+/**Testimonial Section***/
+.testimony{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: whitesmoke;
+    margin-top: 5%;
+}
+.testimony h1{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    color: black;
+    margin-bottom: 5%;
+}
+.testimony h1 span{
+    border-bottom: 4px solid red;
+    padding-bottom: 10px;
+}
+.testimony-person{
+    background-color: white;
+    margin: 3%;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 5%;
+    box-shadow: 1px 1px 3px black;
+}
+.testimony-person:hover{
+    background-color: rgba(255, 0, 0, 0.616);
+    transition: all 0.5s ease-out;
+}
+.testimony-person img{
+    width: 30%;
+    border-radius: 50%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    margin-left: 30%;
+}
+.testimony-person p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+    margin-bottom: 1%;
+}
+.testimony-person h5{
+    color: red;
+}
+.testimony:hover .testimony-person h5{
+    color: black;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    font-style: italic;
+}
+@media screen and (max-width: 600px){
+    .testimony-person{
+        margin: 2% 0;
+    }
+}
+
+
+
+/**Partners Section**/
+.partners{
+    background-color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 5%;
+}
+.partners h1{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    color: black;
+    margin-bottom: 5%;
+
+}
+.partners h1 span{
+    border-bottom: 4px solid red;
+    padding-bottom: 10px;
+}
+.partners-logo{
+    margin-bottom: 5%;
+    
+}
+.partners-logo img{
+    margin: 5%;
+    border: 2px solid red;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px black;
+}
+.partners-logo:hover{
+    opacity: 0.8;
+}
+
+
+
+/**Shopping Section**/
+
+.shop{
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.shop-row h6{
+    text-align: left;
+    color: black;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+.shop-row h6 span{
+    border-bottom: 5px solid red;
+    padding-bottom: 5px;
+}
+.shop-content img{
+     width: 100%;
+     box-shadow: 0 0 3px black;
+     border-radius: 10px;
+     margin-bottom: 1%;
+}
+.shop-content img:hover{
+    opacity: 0.7;
+    transition: 0.5s ease-in-out;
+}
+.shop-content h6{
+    color: rgba(128, 128, 128, 0.719);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.shop-content h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.shop-content p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+
+
+/**Contact Section**/
+.contact{
+    margin-top: 5%;
+    background-color: whitesmoke;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 5%;
+}
+.contact-info h3{
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-top: 10%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+}
+.contact-info h3 span{
+    border-bottom: 4px solid red;
+    padding-bottom: 5%;
+}
+.contact-info p{
+    margin-left: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.contact-icons{
+    display: block;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.contact-icons li{
+    margin-left: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 17px;
+}
+.contact-icons li i{
+    color: red;
+}
+.form{
+    border: 1px solid gray;
+    margin: 3%;
+    box-shadow: 0 0 3px black;
+}
+.form h3{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-top: 8%;
+    margin-bottom: 3%;
+}
+.form-control{
+    margin-left: 10%;
+}
+
+@media screen and (max-width: 600px) {
+    .form-control{
+        margin: 0;
+    }
+    .form h3{
+        text-align: center;
+    }
+}
+
+
+/**Footware Section**/
+.female{
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 5%;
+}
+.female-shoe img{
+    width: 80%;
+    margin: 5%;
+    border-radius: 20px;
+    box-shadow: 0 0 3px  black;
+}
+.female-shoe-content nav{
+    margin: 10% 0 5% 5%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 1px;
+}
+
+.breadcrumb-item a{
+    color: red;
+    font-size: 19px;
+}
+.active{
+    font-size: 19px;
+}
+.female-shoe-content h5{
+    margin-left: 5%;
+    font-weight: bold;
+    margin-bottom: 5%;
+}
+.female-shoe-content p{
+    margin-bottom: 5%;
+}
+.female-shoe-content p a{
+    text-decoration: none;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: auto 2% 1% 5%;
+    border: 1px solid red;
+    padding: 2% 3%;
+    border-radius: 4px;
+}
+.female-shoe-content p a:hover{
+    background-color: black;
+    color: white;
+}
+.female-shoe-content b{
+    margin-left: 5%;
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+.female-shoe-content h1{
+    margin-left: 5%;
+    margin-top: 6%;
+    margin-bottom: 10%;
+}
+.female-shoe-content h1 a{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 30px;
+}
+.female-shoe-content h1 a:hover{
+    background-color: transparent;
+    color: black;
+    border: 2px solid red;
+}
+.female-shoe-content h3{
+    display: inline-flex;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+@media  screen and (max-width: 920px) {
+    .female-shoe-content p a{
+        display: inline-block;
+        width: 50%;
+    }
+}
+.description{
+    background-color: white;
+    margin-top: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.feature h6{
+    color: black;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    border-top: 4px solid red;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-top: 4%;
+}
+.feature ul{
+    display: block;
+    list-style: none;
+}
+.feature ul li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin: 10px;
+}
+.sizes h6{
+    color: black;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    border-top: 4px solid black;
+    text-align: center;
+    border-bottom: 1px solid gray;
+    padding-top: 4%;
+}
+.sizes ul{
+    display: inline-block;
+    list-style: none;
+}
+.sizes ul li{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 15px;
+    margin: 10px 0 10px 25px;
+    border: 1px solid black;
+    text-align: center;
+    padding: 5px 10px;
+}
+.related{
+    background-color: whitesmoke;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 0%;
+}
+.rel-product h3{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    
+}
+.rel-product h3 span{
+    border-bottom: 3px solid red;
+}
+.rel-product img{
+    width: 70%;
+    margin: 1% 1% 1% 5%;
+    border-radius: 10px;
+}
+.rel-product h6{
+    margin: 1% 1% 1% 5%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.rel-product h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 1% 1% 5% 5%;
+}
+.rel-product i{
+    margin: 1%;
+}
+.offcanvas-title{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 1px;
+}
+.offcanvas-body img{
+    width: 80%;
+    margin: 10%;
+    margin-bottom: 1%;
+    border-radius: 20px;
+    box-shadow: 0 0 3px  black;
+}
+.offcanvas-body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: black;
+}
+.offcanvas-body h4{
+    margin: 1% 2% 2% 10%;
+}
+
+
+/**Categorized Products**/
+.gents{
+    background-color: whitesmoke;
+    margin-top: 5%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gents-bread{
+    margin-top: 2%;
+    font-family: fantasy;
+    letter-spacing: 1px;
+    margin: 2%;
+}
+.gents-product img{
+    width: 90%;
+    margin: 5% auto;
+    border-radius: 20px;
+    box-shadow: 0 0 3px  black;
+}
+.gents-product h6{
+    color: rgba(128, 128, 128, 0.719);
+    font-family: Arial, Helvetica, sans-serif;
+}
+.gents-product h5{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+.gents-product p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10%;
+}
+
+/***Scroll Bar*****/
+#mybtn {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 40px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 3px;
+  }
+  
+  #mybtn:hover {
+    background-color: black;
+  }
+/**Footer Section***/
+.footer{
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: black;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    border-top: 2px solid red;
+    bottom: 0;
+}
+
